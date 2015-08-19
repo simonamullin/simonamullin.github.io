@@ -1,3 +1,0 @@
-# simonamullin.github.io
-
-Simon

@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arimo', sans-serif;    
+    padding: 50px;
+		line-height: 1.5;
+  	margin: 30px;
+ 		border-top: 3px solid #222222;
+ 		background-image: url('http://i2.photobucket.com/albums/y17/Sentinelrv/Other-Images/LightBackground.png~original'); ;
+ 		background-attachment: fixed;
+ 		background-repeat: no-repeat;
+ 		background-position: center;
+ 		border-bottom: 3px solid #222222;
+
+}
+
+a {
+  font-weight: bold;
+  color: #05080C;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+  display: block;
+}
+
+h3 {
+  text-transform: uppercase;
+
+ }
+
+p {
+  padding: 2px;
+}
+
+nav {
+	text-align: center;
+}
+
+
+img {
+  width: auto;
+  height: 250px;
+	border: 2px solid;
+	padding: 2px;
+  margin: 2px;
+}
+
+#social {
+  display: inline-block;
+  text-align: center;
+}
+
+.social-image {
+  width: 50;
+  height: 50px;
+  border: none;
+  margin: 3px
+}
+
+.profile-image {
+  float: right;
+  padding: 5px;
+}
+
+.gallery-image {
+  display: inline-block; 
+}

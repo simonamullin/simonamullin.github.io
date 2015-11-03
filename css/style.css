@@ -1,0 +1,518 @@
+  /*
+Project Name: BrineBuddy.com -- Final Project Outline
+Client: BrineBuddy
+Author: Simon Mullin
+Developer @GA in NYC
+*/
+
+.hide {
+  display: none;
+}
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* OUTLINE STYLES
+/*******************************************/
+
+body {
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+   background-color: #FFFFFF;
+}
+
+.header-logo {
+  width: 20%;
+  padding: 10px;
+}
+
+.header-nav li,
+.main_footer_aside_nav li {
+  display: inline-block;
+  margin: 20px 40px 10px 40px;
+  text-decoration: none;
+}
+
+/*main content section*/
+
+.main_primary {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  background-color: #F0FFF0;
+}
+
+.main_featured-content {
+  width: 100%;
+  min-width: 50%;
+  height: auto;
+  margin: 100px 40px 10px 0px;
+  text-align: center;
+}
+
+.main_featured-content-child-slick {
+  width: 100%;
+}
+
+.main_featured-content-child-slick img {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  width: 95%;
+}
+
+.main_featured-content-child-slick img:hover {
+  opacity: .5;
+}
+
+.main_aside_right {
+  background-image: url('../images/empty-jar.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px 40px 10px 40px;
+  text-align: center;
+}
+
+.main_aside_right h3 {
+  margin: 250px 40px 10px 40px;
+}
+
+.main_aside_right h4 {
+  padding-top: 20px;
+}
+
+.main_aside_right .email-form {
+  width: 80%;
+}
+
+.main_aside_right_social {
+ display: flex;
+ justify-content: space-between;
+ margin: 0 40px 10px 40px;
+}
+
+.main_aside_right_social a {
+  height: 64px;
+  width: 64px;
+}
+
+
+.main_about {
+  text-align: center;
+  height: 500px;
+  border-bottom: 1px solid;
+  text-align: center;
+  background-image: url('../images/pickle-about-background.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.main_about_copy {
+  background-color: gray;
+  opacity: .8;
+  padding: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  margin: auto;
+  max-height: 500px;
+}
+
+.main_about_copy h3 {
+  font-style: italic;
+}
+.main_about_copy p {
+  font-size: 30px;
+  color: white;
+}
+
+.main_about_copy h1 {
+  font-size: 34px;
+  color: white;
+}
+
+/*news and reviews sections*/
+
+
+.reviews,
+.news {
+    border-top: 1px solid;
+    height: 500px;
+
+}
+
+.reviews {
+  background-image: url('http://www.stonebridgehomesnw.com/images/uploaded/728421963285654_banner-coming-soon.png');
+  background-repeat: no-repeat;
+}
+
+
+.pickle-news-slider {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+} 
+
+
+.news-article a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+
+}
+
+.news-article:hover {
+  opacity: .5;
+}
+
+.news-article img { 
+  box-shadow: 5px 5px 5px gray;
+  border: solid 1px black;
+}
+
+
+.reviews h1,
+.news h1,
+.main_recipes_hed h2 {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #F0FFF0;
+}
+
+.reviews h3,
+.news h3 {
+  font-style: italic;
+  text-align: center;
+}
+
+/*recipes sections*/
+
+
+.main_recipes_hed {
+  border-bottom: 1px solid;
+
+}
+
+.main_recipes_hed h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.main_recipes_hed h3 {
+  font-style: italic;
+  text-align: center;
+}
+
+
+.main_recipes_pickle-links,
+.main_recipes_pickle-links_hidden {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  margin: 0 50px 0 50px;
+
+}
+
+
+.main_recipes_pickle-links a {
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.main_recipes_pickle-links_hidden {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_recipes_pickle-links_hidden a {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.main_recipes_ctas {
+  margin: 50px;
+  text-align: center;
+}
+
+.main_recipes_cta-1,
+.main_recipes_cta-2,
+.main_recipes_cta-see-less {
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.main_recipes_cta-2 {
+  float: right;
+}
+
+.main_recipes_cta-see-less {
+  display: none;
+}
+
+/*footer section*/
+
+.main_footer img {
+  text-align: center;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.footer_social a {
+  margin: -20px;
+
+}
+
+footer {
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer img {
+  padding-top: 40px;
+}
+
+
+
+/******************************************
+/* MOBILE STYLES
+/*******************************************/
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    header {
+      background-color: #96FFB0;
+      position: fixed;
+      z-index: 9;
+      top: 0 ;
+      padding-bottom: 10px;
+      border-bottom: 1px solid;
+    }
+
+    .header-nav {
+      min-width: auto;
+     display: -webkit-flex;
+   display: flex;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   /* You can set flex-wrap and flex-direction individually */
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   /* Or do it all in one line with flex flow */
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   /* tweak the where items line up on the row */
+   /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
+   font-size: 14px;
+    }
+
+    .header-logo {
+      font-size: 16px;
+    }
+
+    .header-nav a {
+      width: 100px;
+    }
+
+    .header-nav a:nth-child(6) {
+      color: red;
+      order: 1;
+    }
+
+    .main_recipes_pickle-links,
+    .main_recipes_pickle-links_hidden,
+    .main_primary {
+     display: flex;
+     -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+
+    .main_featured-content {
+      max-height: 300px;
+      width: calc(90% - 40px);
+      order: 1;
+    }
+
+    .main_featured-content-child-slick {
+      display: none;
+    }
+
+    .news {
+      display: none;
+    }
+
+    .recipes_recipes_hed,
+    .main_featured-content {
+      margin-top: 130px;
+    }
+
+    .main_aside_right {
+      width: calc(90% - 40px);
+      min-height: 300px;
+    }
+
+    .main_aside_right {
+      order: 3;
+    }
+
+    .main_about h2 {
+      font-size: 28px;
+      text-align: center;
+}
+
+    .main_about {
+      background-image: none;
+      height: auto;
+    }
+
+    .main_about p {
+      font-size: 22px;
+}
+    .main_about_copy {
+      width: 100%;
+      height: 100%;
+      height: auto;
+      margin: 0;
+      z-index: 1;
+}
+
+    .main_recipes_hed h2 {
+        font-size: 24px;
+}    
+
+    .main_footer_aside_nav {
+      display: none;
+    }
+
+}
+
+/******************************************
+/* IMAGE STYLES
+/*******************************************/
+
+.brine-buddy-logo {
+ width: 80%;
+ height: 80%;
+}
+
+header .brine-buddy-logo {
+ width: 80%;
+ height: 80%;
+ min-height: 70%;
+ min-width: 70%;
+ padding-left: 10%;
+}
+
+ .pickle-recipe-image:hover {
+  opacity: .5;
+}
+
+.pickle-recipe-image img {
+  width: 250px;
+  height: 250px;
+  box-shadow: 5px 5px 5px gray;
+  border: solid 1px black;
+}
+
+.pickle-gifs {
+  max-height: 200px;
+}
+
+.pickle-creation {
+  background-image: url('PickleCreation.png');
+}
+
+.facebook,
+.twitter,
+.instagram,
+.pinterest {
+  background-repeat: no-repeat;
+}
+
+.facebook {
+  background-image: url('../images/facebook.png');
+  background-repeat: no-repeat;
+}
+
+.twitter {
+  background-image: url('../images/twitter.png');
+}
+
+.instagram {
+  background-image: url('../images/instagram.png');
+}
+
+.pinterest {
+  background-image: url('../images/pinterest.png');
+}
